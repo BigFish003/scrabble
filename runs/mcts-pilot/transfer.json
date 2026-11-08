@@ -1,0 +1,5177 @@
+{
+  "format": "scrabble-search-confirm-v1",
+  "upstream": "6d61af7daf2f32b4048740de60d75ab2eb5c9d81",
+  "model": "C:\\Users\\samth\\PycharmProjects\\RobloxAccountCreator\\scrabble-rl\\models\\mcts-pilot-128.json",
+  "checkpointGames": 128,
+  "gate": {
+    "format": "scrabble-search-gate-v1",
+    "modelHash": "9046793d7c07d5d2922f240f23b4b74eb966fd6a7d499b44ed08c87aa82a3edf",
+    "seed": 8250000,
+    "seedBlocks": 20,
+    "fields": [
+      "base",
+      "module",
+      "mixed",
+      "duel",
+      "practice"
+    ],
+    "choices": {
+      "Vickrey/6/external": "expert",
+      "FirstPrice/6/external": "expert",
+      "Vickrey/6/module": "expert",
+      "FirstPrice/6/module": "expert",
+      "Vickrey/6/mixed": "expert",
+      "FirstPrice/6/mixed": "full",
+      "Vickrey/2/external": "expert",
+      "FirstPrice/2/external": "expert"
+    }
+  },
+  "tree": {
+    "simulations": 80,
+    "particles": 8,
+    "width": 5,
+    "depth": 4,
+    "horizon": 6,
+    "every": 4,
+    "timeMs": 150,
+    "seed": 82931
+  },
+  "seed": 10400000,
+  "seedBlocks": 48,
+  "rotations": 1,
+  "fields": [
+    "mixed-rivals",
+    "mixed-modules"
+  ],
+  "mode": "first",
+  "workers": 6,
+  "pairedCases": 96,
+  "matches": 288,
+  "elapsedMinutes": 1.48982223,
+  "candidate": "calibrated",
+  "alternative": "full",
+  "summary": {
+    "candidateVsExpert": {
+      "candidate": {
+        "games": 96,
+        "winCredit": 0.2708333333333333,
+        "topFinish": 0.2708333333333333,
+        "meanRank": 1.9791666666666667,
+        "meanScore": 123.8125,
+        "meanMargin": -13.479166666666666,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "decisionsPerSecond": 35.78849848686853
+      },
+      "baseline": {
+        "games": 96,
+        "winCredit": 0.4479166666666667,
+        "topFinish": 0.4583333333333333,
+        "meanRank": 1.7083333333333333,
+        "meanScore": 128.54166666666666,
+        "meanMargin": -3.1041666666666665,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "decisionsPerSecond": 43.61732761761128
+      },
+      "pairedWinCredit": {
+        "seedBlocks": 48,
+        "mean": -0.17708333333333334,
+        "interval95": [
+          -0.2708333333333333,
+          -0.078125
+        ]
+      },
+      "pairedScore": {
+        "seedBlocks": 48,
+        "mean": -4.729166666666667,
+        "interval95": [
+          -7.604166666666667,
+          -2.1041666666666665
+        ]
+      },
+      "groups": {
+        "mixed-rivals/FirstPrice": {
+          "candidate": {
+            "games": 48,
+            "winCredit": 0.3333333333333333,
+            "topFinish": 0.3333333333333333,
+            "meanRank": 1.8333333333333333,
+            "meanScore": 132.39583333333334,
+            "meanMargin": -14.916666666666666,
+            "rejectedBids": 0,
+            "rejectedWords": 0,
+            "decisionsPerSecond": 36.20312423023993
+          },
+          "baseline": {
+            "games": 48,
+            "winCredit": 0.46875,
+            "topFinish": 0.4791666666666667,
+            "meanRank": 1.625,
+            "meanScore": 137.66666666666666,
+            "meanMargin": -3.5833333333333335,
+            "rejectedBids": 0,
+            "rejectedWords": 0,
+            "decisionsPerSecond": 44.6902796850788
+          }
+        },
+        "mixed-modules/FirstPrice": {
+          "candidate": {
+            "games": 48,
+            "winCredit": 0.20833333333333334,
+            "topFinish": 0.20833333333333334,
+            "meanRank": 2.125,
+            "meanScore": 115.22916666666667,
+            "meanMargin": -12.041666666666666,
+            "rejectedBids": 0,
+            "rejectedWords": 0,
+            "decisionsPerSecond": 35.38326242512367
+          },
+          "baseline": {
+            "games": 48,
+            "winCredit": 0.4270833333333333,
+            "topFinish": 0.4375,
+            "meanRank": 1.7916666666666667,
+            "meanScore": 119.41666666666667,
+            "meanMargin": -2.625,
+            "rejectedBids": 0,
+            "rejectedWords": 0,
+            "decisionsPerSecond": 42.59468782464869
+          }
+        }
+      }
+    },
+    "alternativeVsExpert": {
+      "candidate": {
+        "games": 96,
+        "winCredit": 0.2708333333333333,
+        "topFinish": 0.2708333333333333,
+        "meanRank": 1.9791666666666667,
+        "meanScore": 123.8125,
+        "meanMargin": -13.479166666666666,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "decisionsPerSecond": 35.788830623281335
+      },
+      "baseline": {
+        "games": 96,
+        "winCredit": 0.4479166666666667,
+        "topFinish": 0.4583333333333333,
+        "meanRank": 1.7083333333333333,
+        "meanScore": 128.54166666666666,
+        "meanMargin": -3.1041666666666665,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "decisionsPerSecond": 43.61732761761128
+      },
+      "pairedWinCredit": {
+        "seedBlocks": 48,
+        "mean": -0.17708333333333334,
+        "interval95": [
+          -0.2708333333333333,
+          -0.078125
+        ]
+      },
+      "pairedScore": {
+        "seedBlocks": 48,
+        "mean": -4.729166666666667,
+        "interval95": [
+          -7.604166666666667,
+          -2.1041666666666665
+        ]
+      },
+      "groups": {
+        "mixed-rivals/FirstPrice": {
+          "candidate": {
+            "games": 48,
+            "winCredit": 0.3333333333333333,
+            "topFinish": 0.3333333333333333,
+            "meanRank": 1.8333333333333333,
+            "meanScore": 132.39583333333334,
+            "meanMargin": -14.916666666666666,
+            "rejectedBids": 0,
+            "rejectedWords": 0,
+            "decisionsPerSecond": 36.27315899787815
+          },
+          "baseline": {
+            "games": 48,
+            "winCredit": 0.46875,
+            "topFinish": 0.4791666666666667,
+            "meanRank": 1.625,
+            "meanScore": 137.66666666666666,
+            "meanMargin": -3.5833333333333335,
+            "rejectedBids": 0,
+            "rejectedWords": 0,
+            "decisionsPerSecond": 44.6902796850788
+          }
+        },
+        "mixed-modules/FirstPrice": {
+          "candidate": {
+            "games": 48,
+            "winCredit": 0.20833333333333334,
+            "topFinish": 0.20833333333333334,
+            "meanRank": 2.125,
+            "meanScore": 115.22916666666667,
+            "meanMargin": -12.041666666666666,
+            "rejectedBids": 0,
+            "rejectedWords": 0,
+            "decisionsPerSecond": 35.31726557889057
+          },
+          "baseline": {
+            "games": 48,
+            "winCredit": 0.4270833333333333,
+            "topFinish": 0.4375,
+            "meanRank": 1.7916666666666667,
+            "meanScore": 119.41666666666667,
+            "meanMargin": -2.625,
+            "rejectedBids": 0,
+            "rejectedWords": 0,
+            "decisionsPerSecond": 42.59468782464869
+          }
+        }
+      }
+    },
+    "candidateVsAlternative": {
+      "candidate": {
+        "games": 96,
+        "winCredit": 0.2708333333333333,
+        "topFinish": 0.2708333333333333,
+        "meanRank": 1.9791666666666667,
+        "meanScore": 123.8125,
+        "meanMargin": -13.479166666666666,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "decisionsPerSecond": 35.78849848686853
+      },
+      "baseline": {
+        "games": 96,
+        "winCredit": 0.2708333333333333,
+        "topFinish": 0.2708333333333333,
+        "meanRank": 1.9791666666666667,
+        "meanScore": 123.8125,
+        "meanMargin": -13.479166666666666,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "decisionsPerSecond": 35.788830623281335
+      },
+      "pairedWinCredit": {
+        "seedBlocks": 48,
+        "mean": 0,
+        "interval95": [
+          0,
+          0
+        ]
+      },
+      "pairedScore": {
+        "seedBlocks": 48,
+        "mean": 0,
+        "interval95": [
+          0,
+          0
+        ]
+      },
+      "groups": {
+        "mixed-rivals/FirstPrice": {
+          "candidate": {
+            "games": 48,
+            "winCredit": 0.3333333333333333,
+            "topFinish": 0.3333333333333333,
+            "meanRank": 1.8333333333333333,
+            "meanScore": 132.39583333333334,
+            "meanMargin": -14.916666666666666,
+            "rejectedBids": 0,
+            "rejectedWords": 0,
+            "decisionsPerSecond": 36.20312423023993
+          },
+          "baseline": {
+            "games": 48,
+            "winCredit": 0.3333333333333333,
+            "topFinish": 0.3333333333333333,
+            "meanRank": 1.8333333333333333,
+            "meanScore": 132.39583333333334,
+            "meanMargin": -14.916666666666666,
+            "rejectedBids": 0,
+            "rejectedWords": 0,
+            "decisionsPerSecond": 36.27315899787815
+          }
+        },
+        "mixed-modules/FirstPrice": {
+          "candidate": {
+            "games": 48,
+            "winCredit": 0.20833333333333334,
+            "topFinish": 0.20833333333333334,
+            "meanRank": 2.125,
+            "meanScore": 115.22916666666667,
+            "meanMargin": -12.041666666666666,
+            "rejectedBids": 0,
+            "rejectedWords": 0,
+            "decisionsPerSecond": 35.38326242512367
+          },
+          "baseline": {
+            "games": 48,
+            "winCredit": 0.20833333333333334,
+            "topFinish": 0.20833333333333334,
+            "meanRank": 2.125,
+            "meanScore": 115.22916666666667,
+            "meanMargin": -12.041666666666666,
+            "rejectedBids": 0,
+            "rejectedWords": 0,
+            "decisionsPerSecond": 35.31726557889057
+          }
+        }
+      }
+    }
+  },
+  "operational": {
+    "candidate": {
+      "decisions": 6528,
+      "p50Ms": 14.214399999998932,
+      "p95Ms": 31.017499999999927,
+      "p99Ms": 39.00080000000162,
+      "maxMs": 57.518299999999954,
+      "over250Ms": 0,
+      "searched": 2872,
+      "simulations": 229760,
+      "overrides": 1332,
+      "searchOverrides": 1237,
+      "endgames": 96,
+      "timeStops": 0,
+      "deepSelections": 175576,
+      "maxTreeDepth": 4
+    },
+    "alternative": {
+      "decisions": 6528,
+      "p50Ms": 14.184199999999691,
+      "p95Ms": 31.16439999999784,
+      "p99Ms": 39.04950000000099,
+      "maxMs": 56.681400000001304,
+      "over250Ms": 0,
+      "searched": 2872,
+      "simulations": 229760,
+      "overrides": 1332,
+      "searchOverrides": 1237,
+      "endgames": 96,
+      "timeStops": 0,
+      "deepSelections": 175576,
+      "maxTreeDepth": 4
+    },
+    "expert": {
+      "decisions": 6528,
+      "p50Ms": 9.28059999999823,
+      "p95Ms": 24.07219999999961,
+      "p99Ms": 29.3279999999977,
+      "maxMs": 38.793799999999464,
+      "over250Ms": 0,
+      "searched": 0,
+      "simulations": 0,
+      "overrides": 0,
+      "searchOverrides": 0,
+      "endgames": 0,
+      "timeStops": 0,
+      "deepSelections": 0,
+      "maxTreeDepth": 0
+    }
+  },
+  "cases": [
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400000,
+      "block": 0,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 138,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -72,
+        "spent": 238,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2382.1623
+      },
+      "alternative": {
+        "score": 138,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -72,
+        "spent": 238,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1983.4709999999995
+      },
+      "expert": {
+        "score": 120,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -66,
+        "spent": 173,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1403.2960999999996
+      },
+      "utility": [
+        0.19359632297321513,
+        0.19359632297321513,
+        0.19748995859914828
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400000,
+      "block": 0,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 124,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -24,
+        "spent": 224,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1962.7646999999997
+      },
+      "alternative": {
+        "score": 124,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -24,
+        "spent": 224,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2418.0844
+      },
+      "expert": {
+        "score": 124,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -37,
+        "spent": 206,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1333.3509
+      },
+      "utility": [
+        0.23394795541644978,
+        0.23394795541644978,
+        0.22105842950193844
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400001,
+      "block": 1,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 129,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -30,
+        "spent": 229,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2152.5849
+      },
+      "alternative": {
+        "score": 129,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -30,
+        "spent": 229,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2102.9938999999995
+      },
+      "expert": {
+        "score": 152,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 7,
+        "spent": 211,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2122.8388
+      },
+      "utility": [
+        0.2278487262468366,
+        0.2278487262468366,
+        0.9077621320506646
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400001,
+      "block": 1,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 151,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 40,
+        "spent": 251,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2222.812
+      },
+      "alternative": {
+        "score": 151,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 40,
+        "spent": 251,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1869.7226999999998
+      },
+      "expert": {
+        "score": 138,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 6,
+        "spent": 218,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1278.8590999999997
+      },
+      "utility": [
+        0.9417321650058872,
+        0.9417321650058872,
+        0.9066568076502264
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400002,
+      "block": 2,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 128,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -60,
+        "spent": 228,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1885.2619999999997
+      },
+      "alternative": {
+        "score": 128,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -60,
+        "spent": 228,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2288.6983
+      },
+      "expert": {
+        "score": 160,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 5,
+        "spent": 214,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1798.2342999999996
+      },
+      "utility": [
+        0.201721705465209,
+        0.201721705465209,
+        0.9055498470109027
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400002,
+      "block": 2,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 141,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -1,
+        "spent": 241,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2259.8628
+      },
+      "alternative": {
+        "score": 141,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -1,
+        "spent": 241,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2178.151
+      },
+      "expert": {
+        "score": 123,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 29,
+        "spent": 195,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2180.5595000000003
+      },
+      "utility": [
+        0.25888893461136814,
+        0.25888893461136814,
+        0.9311514882324821
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400003,
+      "block": 3,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 142,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 7,
+        "spent": 242,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2271.4620000000004
+      },
+      "alternative": {
+        "score": 142,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 7,
+        "spent": 242,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2247.5164000000004
+      },
+      "expert": {
+        "score": 153,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -9,
+        "spent": 208,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1634.587599999999
+      },
+      "utility": [
+        0.9077621320506646,
+        0.9077621320506646,
+        0.25003320053750444
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400003,
+      "block": 3,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 97,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -60,
+        "spent": 197,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2090.5699999999997
+      },
+      "alternative": {
+        "score": 97,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -60,
+        "spent": 197,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2121.7841000000008
+      },
+      "expert": {
+        "score": 101,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -20,
+        "spent": 192,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1765.1826
+      },
+      "utility": [
+        0.16172170546520898,
+        0.16172170546520898,
+        0.19813649163128788
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400004,
+      "block": 4,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 145,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 14,
+        "spent": 245,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1789.6540000000005
+      },
+      "alternative": {
+        "score": 145,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 14,
+        "spent": 245,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1788.1443
+      },
+      "expert": {
+        "score": 145,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 48,
+        "spent": 205,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1723.2392
+      },
+      "utility": [
+        0.9154312895111364,
+        0.9154312895111364,
+        0.9487924982649517
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400004,
+      "block": 4,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 115,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 23,
+        "spent": 215,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1567.62
+      },
+      "alternative": {
+        "score": 115,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 23,
+        "spent": 215,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1560.2862999999988
+      },
+      "expert": {
+        "score": 120,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 35,
+        "spent": 192,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1279.5290999999997
+      },
+      "utility": [
+        0.9250133817416719,
+        0.9250133817416719,
+        0.9370401953330632
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400005,
+      "block": 5,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 144,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -50,
+        "spent": 244,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1901.9085999999988
+      },
+      "alternative": {
+        "score": 144,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -50,
+        "spent": 244,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1924.685699999999
+      },
+      "expert": {
+        "score": 150,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 23,
+        "spent": 200,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1738.1975000000002
+      },
+      "utility": [
+        0.20953276022781436,
+        0.20953276022781436,
+        0.9250133817416719
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400005,
+      "block": 5,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 129,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -6,
+        "spent": 229,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2097.1169999999993
+      },
+      "alternative": {
+        "score": 129,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -6,
+        "spent": 229,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2118.699199999999
+      },
+      "expert": {
+        "score": 124,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -20,
+        "spent": 196,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1681.1282
+      },
+      "utility": [
+        0.25334319234977376,
+        0.25334319234977376,
+        0.23813649163128792
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400006,
+      "block": 6,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 132,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -12,
+        "spent": 232,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1859.8086000000003
+      },
+      "alternative": {
+        "score": 132,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -12,
+        "spent": 232,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1842.9832000000006
+      },
+      "expert": {
+        "score": 153,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 15,
+        "spent": 214,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1475.6857
+      },
+      "utility": [
+        0.24674512116091218,
+        0.24674512116091218,
+        0.916514041292463
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400006,
+      "block": 6,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 112,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -4,
+        "spent": 212,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2099.3045
+      },
+      "alternative": {
+        "score": 112,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -4,
+        "spent": 212,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2154.5046999999995
+      },
+      "expert": {
+        "score": 139,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 41,
+        "spent": 232,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1790.202800000001
+      },
+      "utility": [
+        0.21555847962837205,
+        0.21555847962837205,
+        0.9426454953263956
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400007,
+      "block": 7,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 128,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -2,
+        "spent": 228,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1822.745500000001
+      },
+      "alternative": {
+        "score": 128,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -2,
+        "spent": 228,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1803.6486000000004
+      },
+      "expert": {
+        "score": 118,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -24,
+        "spent": 183,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1431.1365999999998
+      },
+      "utility": [
+        0.25777814350343253,
+        0.25777814350343253,
+        0.23394795541644978
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400007,
+      "block": 7,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 114,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -37,
+        "spent": 214,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2032.5509000000002
+      },
+      "alternative": {
+        "score": 114,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -37,
+        "spent": 214,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2050.925299999999
+      },
+      "expert": {
+        "score": 121,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 15,
+        "spent": 190,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1914.808399999998
+      },
+      "utility": [
+        0.22105842950193844,
+        0.22105842950193844,
+        0.916514041292463
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400008,
+      "block": 8,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 132,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 19,
+        "spent": 232,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1829.3543999999983
+      },
+      "alternative": {
+        "score": 132,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 19,
+        "spent": 232,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1858.5661
+      },
+      "expert": {
+        "score": 126,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 3,
+        "spent": 206,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1375.1841999999997
+      },
+      "utility": [
+        0.9208029771298998,
+        0.9208029771298998,
+        0.9033320993138824
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400008,
+      "block": 8,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 113,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -3,
+        "spent": 213,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1777.0096999999987
+      },
+      "alternative": {
+        "score": 113,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -3,
+        "spent": 213,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1766.5629000000008
+      },
+      "expert": {
+        "score": 117,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 1,
+        "spent": 197,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1524.2626999999993
+      },
+      "utility": [
+        0.2566679006861178,
+        0.2566679006861178,
+        0.901111065388632
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400009,
+      "block": 9,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 97,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -92,
+        "spent": 197,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1755.8809
+      },
+      "alternative": {
+        "score": 97,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -92,
+        "spent": 197,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1719.496500000001
+      },
+      "expert": {
+        "score": 116,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -31,
+        "spent": 202,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1429.2914000000019
+      },
+      "utility": [
+        0.1829229888058606,
+        0.1829229888058606,
+        0.2268560582021485
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400009,
+      "block": 9,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 111,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -19,
+        "spent": 211,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2220.636200000001
+      },
+      "alternative": {
+        "score": 111,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -19,
+        "spent": 211,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2256.2226999999984
+      },
+      "expert": {
+        "score": 102,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -30,
+        "spent": 188,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1556.3680000000022
+      },
+      "utility": [
+        0.19919702287010024,
+        0.19919702287010024,
+        0.18784872624683657
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400010,
+      "block": 10,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 131,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -1,
+        "spent": 231,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1781.9112999999998
+      },
+      "alternative": {
+        "score": 131,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -1,
+        "spent": 231,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1746.3832000000002
+      },
+      "expert": {
+        "score": 113,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -29,
+        "spent": 178,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1151.1617000000006
+      },
+      "utility": [
+        0.25888893461136814,
+        0.25888893461136814,
+        0.22884851176751805
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400010,
+      "block": 10,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 88,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -48,
+        "spent": 188,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1744.8205000000016
+      },
+      "alternative": {
+        "score": 88,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -48,
+        "spent": 188,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1755.5066000000006
+      },
+      "expert": {
+        "score": 84,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -48,
+        "spent": 180,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1438.565200000001
+      },
+      "utility": [
+        0.21120750173504843,
+        0.21120750173504843,
+        0.21120750173504843
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400011,
+      "block": 11,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 108,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -34,
+        "spent": 208,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1670.9316
+      },
+      "alternative": {
+        "score": 108,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -34,
+        "spent": 208,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1705.4009000000005
+      },
+      "expert": {
+        "score": 117,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -25,
+        "spent": 197,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1259.2487
+      },
+      "utility": [
+        0.2239223959989679,
+        0.2239223959989679,
+        0.19291528814832787
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400011,
+      "block": 11,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 120,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -19,
+        "spent": 220,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1928.2774000000027
+      },
+      "alternative": {
+        "score": 120,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -19,
+        "spent": 220,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1942.781500000001
+      },
+      "expert": {
+        "score": 115,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -1,
+        "spent": 199,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1339.8860999999997
+      },
+      "utility": [
+        0.23919702287010028,
+        0.23919702287010028,
+        0.25888893461136814
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400012,
+      "block": 12,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 102,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -96,
+        "spent": 202,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1947.4943999999996
+      },
+      "alternative": {
+        "score": 102,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -96,
+        "spent": 202,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2054.1127000000015
+      },
+      "expert": {
+        "score": 104,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -81,
+        "spent": 176,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1536.2760999999991
+      },
+      "utility": [
+        0.1811797924471836,
+        0.1811797924471836,
+        0.1883702129800976
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400012,
+      "block": 12,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 90,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -40,
+        "spent": 190,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1889.3343999999997
+      },
+      "alternative": {
+        "score": 90,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -40,
+        "spent": 190,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1882.7981999999975
+      },
+      "expert": {
+        "score": 91,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -41,
+        "spent": 181,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1828.7945
+      },
+      "utility": [
+        0.1782678349941129,
+        0.1782678349941129,
+        0.17735450467360442
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400013,
+      "block": 13,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 145,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 34,
+        "spent": 245,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1995.1983
+      },
+      "alternative": {
+        "score": 145,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 34,
+        "spent": 245,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1972.8564000000006
+      },
+      "expert": {
+        "score": 109,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -63,
+        "spent": 144,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1545.8763
+      },
+      "utility": [
+        0.9360776040010321,
+        0.9360776040010321,
+        0.1995632222882837
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400013,
+      "block": 13,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 96,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -33,
+        "spent": 196,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2238.073700000001
+      },
+      "alternative": {
+        "score": 96,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -33,
+        "spent": 196,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2293.359700000001
+      },
+      "expert": {
+        "score": 115,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 16,
+        "spent": 189,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2130.3339000000014
+      },
+      "utility": [
+        0.18489273540210915,
+        0.18489273540210915,
+        0.9175928270458766
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400014,
+      "block": 14,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 147,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 29,
+        "spent": 247,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2150.1640000000007
+      },
+      "alternative": {
+        "score": 147,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 29,
+        "spent": 247,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2158.5699999999997
+      },
+      "expert": {
+        "score": 128,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 19,
+        "spent": 199,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1573.6785999999993
+      },
+      "utility": [
+        0.9311514882324821,
+        0.9311514882324821,
+        0.9208029771298998
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400014,
+      "block": 14,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 112,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -35,
+        "spent": 212,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2178.7298999999985
+      },
+      "alternative": {
+        "score": 112,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -35,
+        "spent": 212,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2053.712599999999
+      },
+      "expert": {
+        "score": 130,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 22,
+        "spent": 220,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1940.1839
+      },
+      "utility": [
+        0.2229598046669369,
+        0.2229598046669369,
+        0.9239689296102519
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400015,
+      "block": 15,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 134,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -2,
+        "spent": 234,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1912.2999999999993
+      },
+      "alternative": {
+        "score": 134,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -2,
+        "spent": 234,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1930.5407999999989
+      },
+      "expert": {
+        "score": 157,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 21,
+        "spent": 236,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1618.8763999999974
+      },
+      "utility": [
+        0.25777814350343253,
+        0.25777814350343253,
+        0.9229188996535099
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400015,
+      "block": 15,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 113,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -21,
+        "spent": 213,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2020.411600000003
+      },
+      "alternative": {
+        "score": 113,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -21,
+        "spent": 213,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2023.9121000000014
+      },
+      "expert": {
+        "score": 108,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -13,
+        "spent": 183,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1425.0157
+      },
+      "utility": [
+        0.19708110034649012,
+        0.19708110034649012,
+        0.24565518143980553
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400016,
+      "block": 16,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 96,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -72,
+        "spent": 196,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1841.875799999998
+      },
+      "alternative": {
+        "score": 96,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -72,
+        "spent": 196,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1852.1260999999977
+      },
+      "expert": {
+        "score": 129,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -7,
+        "spent": 212,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1721.6810000000005
+      },
+      "utility": [
+        0.1535963229732151,
+        0.1535963229732151,
+        0.25223786794933545
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400016,
+      "block": 16,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 102,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -33,
+        "spent": 202,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1895.8932999999997
+      },
+      "alternative": {
+        "score": 102,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -33,
+        "spent": 202,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1902.2125000000015
+      },
+      "expert": {
+        "score": 100,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -50,
+        "spent": 193,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1805.749100000001
+      },
+      "utility": [
+        0.18489273540210915,
+        0.18489273540210915,
+        0.20953276022781436
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400017,
+      "block": 17,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 167,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 10,
+        "spent": 267,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1848.8858
+      },
+      "alternative": {
+        "score": 167,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 10,
+        "spent": 267,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1838.8424999999988
+      },
+      "expert": {
+        "score": 148,
+        "rank": 1,
+        "winCredit": 0.5,
+        "topFinish": 1,
+        "margin": 0,
+        "spent": 205,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1429.2824999999975
+      },
+      "utility": [
+        0.9110656110524739,
+        0.9110656110524739,
+        0.6
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400017,
+      "block": 17,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 119,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -16,
+        "spent": 219,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1523.4697000000015
+      },
+      "alternative": {
+        "score": 119,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -16,
+        "spent": 219,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1527.8099000000002
+      },
+      "expert": {
+        "score": 159,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 27,
+        "spent": 247,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1332.354800000001
+      },
+      "utility": [
+        0.24240717295412348,
+        0.24240717295412348,
+        0.9291312612451591
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400018,
+      "block": 18,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 153,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 15,
+        "spent": 253,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1937.6025999999983
+      },
+      "alternative": {
+        "score": 153,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 15,
+        "spent": 253,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1921.5553
+      },
+      "expert": {
+        "score": 154,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 16,
+        "spent": 238,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1615.8031999999948
+      },
+      "utility": [
+        0.916514041292463,
+        0.916514041292463,
+        0.9175928270458766
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400018,
+      "block": 18,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 129,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -13,
+        "spent": 229,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2129.1509000000005
+      },
+      "alternative": {
+        "score": 129,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -13,
+        "spent": 229,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2135.6808999999994
+      },
+      "expert": {
+        "score": 109,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -3,
+        "spent": 181,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1692.0792000000001
+      },
+      "utility": [
+        0.24565518143980553,
+        0.24565518143980553,
+        0.2566679006861178
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400019,
+      "block": 19,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 135,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -43,
+        "spent": 235,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1891.0008000000016
+      },
+      "alternative": {
+        "score": 135,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -43,
+        "spent": 235,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1887.2156000000032
+      },
+      "expert": {
+        "score": 130,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -19,
+        "spent": 202,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1677.1376000000018
+      },
+      "utility": [
+        0.21555378570603556,
+        0.21555378570603556,
+        0.23919702287010028
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400019,
+      "block": 19,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 108,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 5,
+        "spent": 208,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1685.2454999999973
+      },
+      "alternative": {
+        "score": 108,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 5,
+        "spent": 208,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1692.011599999998
+      },
+      "expert": {
+        "score": 99,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -36,
+        "spent": 187,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1631.1088000000018
+      },
+      "utility": [
+        0.9055498470109027,
+        0.9055498470109027,
+        0.1820051037744775
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400020,
+      "block": 20,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 106,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -61,
+        "spent": 206,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1763.1353999999992
+      },
+      "alternative": {
+        "score": 106,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -61,
+        "spent": 206,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1764.3272000000034
+      },
+      "expert": {
+        "score": 123,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -21,
+        "spent": 182,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1489.929099999994
+      },
+      "utility": [
+        0.16099271810378035,
+        0.16099271810378035,
+        0.23708110034649016
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400020,
+      "block": 20,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 101,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -31,
+        "spent": 201,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1827.6489000000001
+      },
+      "alternative": {
+        "score": 101,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -31,
+        "spent": 201,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1825.9709999999977
+      },
+      "expert": {
+        "score": 102,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -28,
+        "spent": 187,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1516.8162999999986
+      },
+      "utility": [
+        0.2268560582021485,
+        0.2268560582021485,
+        0.22985524210854613
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400021,
+      "block": 21,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 117,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -19,
+        "spent": 217,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1958.087900000006
+      },
+      "alternative": {
+        "score": 117,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -19,
+        "spent": 217,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1971.6440999999977
+      },
+      "expert": {
+        "score": 146,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 52,
+        "spent": 206,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1560.0564000000013
+      },
+      "utility": [
+        0.23919702287010028,
+        0.23919702287010028,
+        0.9521048396756888
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400021,
+      "block": 21,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 99,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -42,
+        "spent": 199,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1769.0573999999979
+      },
+      "alternative": {
+        "score": 99,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -42,
+        "spent": 199,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1719.2404999999999
+      },
+      "expert": {
+        "score": 107,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -10,
+        "spent": 184,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1401.3941999999952
+      },
+      "utility": [
+        0.176449788608452,
+        0.176449788608452,
+        0.24893438894752623
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400022,
+      "block": 22,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 123,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 16,
+        "spent": 223,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1579.6448000000019
+      },
+      "alternative": {
+        "score": 123,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 16,
+        "spent": 223,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1586.1089000000065
+      },
+      "expert": {
+        "score": 115,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -9,
+        "spent": 193,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1704.3238999999958
+      },
+      "utility": [
+        0.9175928270458766,
+        0.9175928270458766,
+        0.21003320053750443
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400022,
+      "block": 22,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 103,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -33,
+        "spent": 203,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1926.1823999999979
+      },
+      "alternative": {
+        "score": 103,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -33,
+        "spent": 203,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1924.3431000000055
+      },
+      "expert": {
+        "score": 121,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 9,
+        "spent": 197,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1734.1963000000032
+      },
+      "utility": [
+        0.18489273540210915,
+        0.18489273540210915,
+        0.9099667994624956
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400023,
+      "block": 23,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 147,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -12,
+        "spent": 247,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1754.9460000000036
+      },
+      "alternative": {
+        "score": 147,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -12,
+        "spent": 247,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1742.742299999998
+      },
+      "expert": {
+        "score": 150,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -3,
+        "spent": 207,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1628.479299999999
+      },
+      "utility": [
+        0.24674512116091218,
+        0.24674512116091218,
+        0.2566679006861178
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400023,
+      "block": 23,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 93,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -21,
+        "spent": 193,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1748.494399999996
+      },
+      "alternative": {
+        "score": 93,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -21,
+        "spent": 193,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1773.419299999994
+      },
+      "expert": {
+        "score": 101,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -44,
+        "spent": 151,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1428.5910000000003
+      },
+      "utility": [
+        0.23708110034649016,
+        0.23708110034649016,
+        0.21466658871729338
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400024,
+      "block": 24,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 119,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -3,
+        "spent": 219,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1940.1865000000034
+      },
+      "alternative": {
+        "score": 119,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -3,
+        "spent": 219,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2003.2332000000024
+      },
+      "expert": {
+        "score": 124,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -11,
+        "spent": 199,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1495.116599999994
+      },
+      "utility": [
+        0.2566679006861178,
+        0.2566679006861178,
+        0.24783827593338076
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400024,
+      "block": 24,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 117,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 8,
+        "spent": 217,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1763.243300000002
+      },
+      "alternative": {
+        "score": 117,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 8,
+        "spent": 217,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1638.0656999999992
+      },
+      "expert": {
+        "score": 104,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 7,
+        "spent": 151,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1385.0682000000015
+      },
+      "utility": [
+        0.908865551578155,
+        0.908865551578155,
+        0.9077621320506646
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400025,
+      "block": 25,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 140,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -33,
+        "spent": 238,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1603.0892000000022
+      },
+      "alternative": {
+        "score": 140,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -33,
+        "spent": 238,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1587.440999999999
+      },
+      "expert": {
+        "score": 138,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -30,
+        "spent": 211,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1400.914499999999
+      },
+      "utility": [
+        0.2248927354021092,
+        0.2248927354021092,
+        0.2278487262468366
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400025,
+      "block": 25,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 132,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -3,
+        "spent": 232,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1921.2634999999937
+      },
+      "alternative": {
+        "score": 132,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -3,
+        "spent": 232,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2042.344600000004
+      },
+      "expert": {
+        "score": 126,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 7,
+        "spent": 202,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1406.8948000000019
+      },
+      "utility": [
+        0.2566679006861178,
+        0.2566679006861178,
+        0.9077621320506646
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400026,
+      "block": 26,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 148,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -18,
+        "spent": 248,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1687.9763999999996
+      },
+      "alternative": {
+        "score": 148,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -18,
+        "spent": 248,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1547.6812000000064
+      },
+      "expert": {
+        "score": 159,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 9,
+        "spent": 189,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1436.4904999999999
+      },
+      "utility": [
+        0.24026246797750964,
+        0.24026246797750964,
+        0.9099667994624956
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400026,
+      "block": 26,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 156,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 21,
+        "spent": 256,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1934.7306000000026
+      },
+      "alternative": {
+        "score": 156,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 21,
+        "spent": 256,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1808.0037000000011
+      },
+      "expert": {
+        "score": 179,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 71,
+        "spent": 273,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1452.7306000000026
+      },
+      "utility": [
+        0.9229188996535099,
+        0.9229188996535099,
+        0.9657779133687007
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400027,
+      "block": 27,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 126,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -29,
+        "spent": 226,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2063.711200000005
+      },
+      "alternative": {
+        "score": 126,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -29,
+        "spent": 226,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2054.7430999999997
+      },
+      "expert": {
+        "score": 121,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -41,
+        "spent": 165,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1463.639599999995
+      },
+      "utility": [
+        0.18884851176751802,
+        0.18884851176751802,
+        0.17735450467360442
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400027,
+      "block": 27,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 129,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -19,
+        "spent": 229,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1646.733500000002
+      },
+      "alternative": {
+        "score": 129,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -19,
+        "spent": 229,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1803.7100999999966
+      },
+      "expert": {
+        "score": 149,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 33,
+        "spent": 199,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1324.7357000000047
+      },
+      "utility": [
+        0.23919702287010028,
+        0.23919702287010028,
+        0.935107264597891
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400028,
+      "block": 28,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 132,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -15,
+        "spent": 232,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1893.474500000004
+      },
+      "alternative": {
+        "score": 132,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -15,
+        "spent": 232,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1894.5826000000015
+      },
+      "expert": {
+        "score": 153,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 2,
+        "spent": 212,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1475.260699999999
+      },
+      "utility": [
+        0.2434859587075371,
+        0.2434859587075371,
+        0.9022218564965676
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400028,
+      "block": 28,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 109,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -4,
+        "spent": 209,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2208.9064
+      },
+      "alternative": {
+        "score": 109,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -4,
+        "spent": 209,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2227.9665999999997
+      },
+      "expert": {
+        "score": 109,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -1,
+        "spent": 192,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1590.4415000000008
+      },
+      "utility": [
+        0.2555584796283721,
+        0.2555584796283721,
+        0.25888893461136814
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400029,
+      "block": 29,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 105,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -22,
+        "spent": 205,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1932.4691999999995
+      },
+      "alternative": {
+        "score": 105,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -22,
+        "spent": 205,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1900.687699999995
+      },
+      "expert": {
+        "score": 93,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -40,
+        "spent": 145,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1438.4098999999987
+      },
+      "utility": [
+        0.19603107038974815,
+        0.19603107038974815,
+        0.1782678349941129
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400029,
+      "block": 29,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 87,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -36,
+        "spent": 187,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2052.844999999994
+      },
+      "alternative": {
+        "score": 87,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -36,
+        "spent": 187,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2026.448000000004
+      },
+      "expert": {
+        "score": 138,
+        "rank": 1,
+        "winCredit": 0.5,
+        "topFinish": 1,
+        "margin": 0,
+        "spent": 220,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2002.1101999999955
+      },
+      "utility": [
+        0.1820051037744775,
+        0.1820051037744775,
+        0.6
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400030,
+      "block": 30,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 114,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -54,
+        "spent": 214,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1804.6621999999988
+      },
+      "alternative": {
+        "score": 114,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -54,
+        "spent": 214,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1788.1675000000032
+      },
+      "expert": {
+        "score": 157,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 31,
+        "spent": 250,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1299.0256999999983
+      },
+      "utility": [
+        0.16629504330019648,
+        0.16629504330019648,
+        0.9331439417978515
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400030,
+      "block": 30,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 115,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -36,
+        "spent": 215,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1657.0149999999994
+      },
+      "alternative": {
+        "score": 115,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -36,
+        "spent": 215,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1670.7973999999958
+      },
+      "expert": {
+        "score": 131,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -43,
+        "spent": 204,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1370.0508999999947
+      },
+      "utility": [
+        0.22200510377447755,
+        0.22200510377447755,
+        0.21555378570603556
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400031,
+      "block": 31,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 152,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 35,
+        "spent": 252,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1904.0796000000046
+      },
+      "alternative": {
+        "score": 152,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 35,
+        "spent": 252,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1935.0599999999977
+      },
+      "expert": {
+        "score": 160,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 20,
+        "spent": 223,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1512.8382999999958
+      },
+      "utility": [
+        0.9370401953330632,
+        0.9370401953330632,
+        0.9218635083687121
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400031,
+      "block": 31,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 120,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -20,
+        "spent": 220,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1756.625899999999
+      },
+      "alternative": {
+        "score": 120,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -20,
+        "spent": 220,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1762.7569000000003
+      },
+      "expert": {
+        "score": 111,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -19,
+        "spent": 193,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1463.6244000000006
+      },
+      "utility": [
+        0.23813649163128792,
+        0.23813649163128792,
+        0.23919702287010028
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400032,
+      "block": 32,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 135,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -63,
+        "spent": 235,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2312.3542000000016
+      },
+      "alternative": {
+        "score": 135,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -63,
+        "spent": 235,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2313.9507999999987
+      },
+      "expert": {
+        "score": 147,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 3,
+        "spent": 202,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1423.1852
+      },
+      "utility": [
+        0.1995632222882837,
+        0.1995632222882837,
+        0.9033320993138824
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400032,
+      "block": 32,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 160,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 58,
+        "spent": 260,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2008.4721999999965
+      },
+      "alternative": {
+        "score": 160,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 58,
+        "spent": 260,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1971.3157999999967
+      },
+      "expert": {
+        "score": 150,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 2,
+        "spent": 241,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1501.5864000000001
+      },
+      "utility": [
+        0.9567918125437043,
+        0.9567918125437043,
+        0.9022218564965676
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400033,
+      "block": 33,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 193,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 28,
+        "spent": 293,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1885.2661000000007
+      },
+      "alternative": {
+        "score": 193,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 28,
+        "spent": 293,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1894.0910000000003
+      },
+      "expert": {
+        "score": 181,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 22,
+        "spent": 240,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1501.7958999999973
+      },
+      "utility": [
+        0.9301447578914539,
+        0.9301447578914539,
+        0.9239689296102519
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400033,
+      "block": 33,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 172,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 68,
+        "spent": 272,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2075.4222999999984
+      },
+      "alternative": {
+        "score": 172,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 68,
+        "spent": 272,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2072.3872000000047
+      },
+      "expert": {
+        "score": 174,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 70,
+        "spent": 258,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1673.9540999999954
+      },
+      "utility": [
+        0.9638451630164475,
+        0.9638451630164475,
+        0.965142935764283
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400034,
+      "block": 34,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 135,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -43,
+        "spent": 235,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2174.554299999996
+      },
+      "alternative": {
+        "score": 135,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -43,
+        "spent": 235,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2181.9112999999998
+      },
+      "expert": {
+        "score": 178,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 51,
+        "spent": 253,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1853.9929000000047
+      },
+      "utility": [
+        0.21555378570603556,
+        0.21555378570603556,
+        0.9512907058460809
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400034,
+      "block": 34,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 126,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 5,
+        "spent": 226,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2428.7514999999985
+      },
+      "alternative": {
+        "score": 126,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 5,
+        "spent": 226,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2461.995600000002
+      },
+      "expert": {
+        "score": 144,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 39,
+        "spent": 212,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1957.0267000000022
+      },
+      "utility": [
+        0.9055498470109027,
+        0.9055498470109027,
+        0.9408103255234326
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400035,
+      "block": 35,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 128,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 11,
+        "spent": 228,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1698.3979000000036
+      },
+      "alternative": {
+        "score": 128,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 11,
+        "spent": 228,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1687.0440999999992
+      },
+      "expert": {
+        "score": 122,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -31,
+        "spent": 182,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1441.8117000000057
+      },
+      "utility": [
+        0.9121617240666193,
+        0.9121617240666193,
+        0.2268560582021485
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400035,
+      "block": 35,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 119,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -8,
+        "spent": 219,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1712.031200000005
+      },
+      "alternative": {
+        "score": 119,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -8,
+        "spent": 219,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1718.4233999999997
+      },
+      "expert": {
+        "score": 147,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 27,
+        "spent": 237,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1608.7975000000006
+      },
+      "utility": [
+        0.2511344484218452,
+        0.2511344484218452,
+        0.9291312612451591
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400036,
+      "block": 36,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 125,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -11,
+        "spent": 225,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1789.1607000000004
+      },
+      "alternative": {
+        "score": 125,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -11,
+        "spent": 225,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1768.9934000000067
+      },
+      "expert": {
+        "score": 118,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -29,
+        "spent": 192,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1533.5638000000035
+      },
+      "utility": [
+        0.24783827593338076,
+        0.24783827593338076,
+        0.22884851176751805
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400036,
+      "block": 36,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 76,
+        "rank": 4,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -57,
+        "spent": 176,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1907.9668999999994
+      },
+      "alternative": {
+        "score": 76,
+        "rank": 4,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -57,
+        "spent": 176,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1929.0177000000112
+      },
+      "expert": {
+        "score": 84,
+        "rank": 4,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -21,
+        "spent": 145,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1515.1052000000054
+      },
+      "utility": [
+        0.12396567954813653,
+        0.12396567954813653,
+        0.15708110034649014
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400037,
+      "block": 37,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 132,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 21,
+        "spent": 232,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1648.9339000000036
+      },
+      "alternative": {
+        "score": 132,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 21,
+        "spent": 232,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1649.6897000000026
+      },
+      "expert": {
+        "score": 144,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 26,
+        "spent": 193,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1426.4554999999964
+      },
+      "utility": [
+        0.9229188996535099,
+        0.9229188996535099,
+        0.9281111825793182
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400037,
+      "block": 37,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 102,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -33,
+        "spent": 202,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1769.1430000000037
+      },
+      "alternative": {
+        "score": 102,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -33,
+        "spent": 202,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1811.5872999999992
+      },
+      "expert": {
+        "score": 111,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -2,
+        "spent": 184,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1489.4728999999934
+      },
+      "utility": [
+        0.2248927354021092,
+        0.2248927354021092,
+        0.25777814350343253
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400038,
+      "block": 38,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 122,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -16,
+        "spent": 222,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1938.3652999999904
+      },
+      "alternative": {
+        "score": 122,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -16,
+        "spent": 222,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1916.8696000000054
+      },
+      "expert": {
+        "score": 120,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -37,
+        "spent": 198,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1688.2531999999992
+      },
+      "utility": [
+        0.24240717295412348,
+        0.24240717295412348,
+        0.22105842950193844
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400038,
+      "block": 38,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 72,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -45,
+        "spent": 172,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1973.808600000004
+      },
+      "alternative": {
+        "score": 72,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -45,
+        "spent": 172,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1974.9517999999953
+      },
+      "expert": {
+        "score": 97,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -9,
+        "spent": 184,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1698.8166999999958
+      },
+      "utility": [
+        0.173788284273999,
+        0.173788284273999,
+        0.25003320053750444
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400039,
+      "block": 39,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 115,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -25,
+        "spent": 215,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1629.712599999999
+      },
+      "alternative": {
+        "score": 115,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -25,
+        "spent": 215,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1618.0982000000076
+      },
+      "expert": {
+        "score": 138,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 9,
+        "spent": 172,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1331.4143999999942
+      },
+      "utility": [
+        0.2329152881483279,
+        0.2329152881483279,
+        0.9099667994624956
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400039,
+      "block": 39,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 106,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -18,
+        "spent": 206,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1958.8126000000047
+      },
+      "alternative": {
+        "score": 106,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -18,
+        "spent": 206,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1936.4279999999999
+      },
+      "expert": {
+        "score": 93,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -42,
+        "spent": 181,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1464.5564000000013
+      },
+      "utility": [
+        0.2002624679775096,
+        0.2002624679775096,
+        0.176449788608452
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400040,
+      "block": 40,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 189,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 56,
+        "spent": 289,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1789.153600000005
+      },
+      "alternative": {
+        "score": 189,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 56,
+        "spent": 289,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1764.8669000000082
+      },
+      "expert": {
+        "score": 202,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 110,
+        "spent": 274,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1473.6301999999996
+      },
+      "utility": [
+        0.9552673373135345,
+        0.9552673373135345,
+        0.9840308466770772
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400040,
+      "block": 40,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 154,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 29,
+        "spent": 254,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1785.3246999999974
+      },
+      "alternative": {
+        "score": 154,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 29,
+        "spent": 254,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1779.2638000000006
+      },
+      "expert": {
+        "score": 162,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 46,
+        "spent": 247,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1600.5130000000063
+      },
+      "utility": [
+        0.9311514882324821,
+        0.9311514882324821,
+        0.9470810470665518
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400041,
+      "block": 41,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 154,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 22,
+        "spent": 254,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1646.975099999996
+      },
+      "alternative": {
+        "score": 154,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 22,
+        "spent": 254,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1641.061600000001
+      },
+      "expert": {
+        "score": 187,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 55,
+        "spent": 258,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1657.298299999995
+      },
+      "utility": [
+        0.9239689296102519,
+        0.9239689296102519,
+        0.9544908765614368
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400041,
+      "block": 41,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 187,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 94,
+        "spent": 287,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1590.9545999999973
+      },
+      "alternative": {
+        "score": 187,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 94,
+        "spent": 287,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1566.2063999999955
+      },
+      "expert": {
+        "score": 172,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 65,
+        "spent": 256,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1332.1484999999957
+      },
+      "utility": [
+        0.9779637075606091,
+        0.9779637075606091,
+        0.961828391151027
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400042,
+      "block": 42,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 141,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -33,
+        "spent": 241,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1998.3176999999996
+      },
+      "alternative": {
+        "score": 141,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -33,
+        "spent": 241,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2012.2554999999993
+      },
+      "expert": {
+        "score": 153,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -21,
+        "spent": 206,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1467.2099000000017
+      },
+      "utility": [
+        0.2248927354021092,
+        0.2248927354021092,
+        0.23708110034649016
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 0,
+      "seed": 10400042,
+      "block": 42,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 116,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -12,
+        "spent": 216,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1749.9856
+      },
+      "alternative": {
+        "score": 116,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -12,
+        "spent": 216,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1740.8892999999953
+      },
+      "expert": {
+        "score": 120,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -18,
+        "spent": 208,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1553.8378999999986
+      },
+      "utility": [
+        0.24674512116091218,
+        0.24674512116091218,
+        0.24026246797750964
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400043,
+      "block": 43,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 105,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -17,
+        "spent": 205,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1721.2133999999933
+      },
+      "alternative": {
+        "score": 105,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -17,
+        "spent": 205,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1741.9274000000005
+      },
+      "expert": {
+        "score": 116,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 4,
+        "spent": 190,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1514.4477000000043
+      },
+      "utility": [
+        0.20133259633103567,
+        0.20133259633103567,
+        0.904441520371628
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 1,
+      "seed": 10400043,
+      "block": 43,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 109,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -6,
+        "spent": 209,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1967.8408999999956
+      },
+      "alternative": {
+        "score": 109,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -6,
+        "spent": 209,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2011.7228999999934
+      },
+      "expert": {
+        "score": 95,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -25,
+        "spent": 179,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1634.4928000000073
+      },
+      "utility": [
+        0.25334319234977376,
+        0.25334319234977376,
+        0.2329152881483279
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400044,
+      "block": 44,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 121,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -4,
+        "spent": 221,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2073.3677000000025
+      },
+      "alternative": {
+        "score": 121,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -4,
+        "spent": 221,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2065.977099999989
+      },
+      "expert": {
+        "score": 130,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -19,
+        "spent": 208,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1311.4807999999903
+      },
+      "utility": [
+        0.21555847962837205,
+        0.21555847962837205,
+        0.23919702287010028
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 2,
+      "seed": 10400044,
+      "block": 44,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 102,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -12,
+        "spent": 202,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2039.3099000000075
+      },
+      "alternative": {
+        "score": 102,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -12,
+        "spent": 202,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2043.2141999999876
+      },
+      "expert": {
+        "score": 81,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -31,
+        "spent": 168,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1879.3220999999903
+      },
+      "utility": [
+        0.24674512116091218,
+        0.24674512116091218,
+        0.18685605820214846
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400045,
+      "block": 45,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 127,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 17,
+        "spent": 227,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1829.8118000000104
+      },
+      "alternative": {
+        "score": 127,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 17,
+        "spent": 227,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1808.6189000000013
+      },
+      "expert": {
+        "score": 106,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -28,
+        "spent": 189,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1522.3790000000008
+      },
+      "utility": [
+        0.9186674036689644,
+        0.9186674036689644,
+        0.1898552421085461
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 3,
+      "seed": 10400045,
+      "block": 45,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 69,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -55,
+        "spent": 169,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2229.241599999994
+      },
+      "alternative": {
+        "score": 69,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -55,
+        "spent": 169,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2221.796199999997
+      },
+      "expert": {
+        "score": 93,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -37,
+        "spent": 187,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1974.8531000000075
+      },
+      "utility": [
+        0.16550912343856322,
+        0.16550912343856322,
+        0.1810584295019384
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400046,
+      "block": 46,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 139,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 2,
+        "spent": 239,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1630.8432999999932
+      },
+      "alternative": {
+        "score": 139,
+        "rank": 1,
+        "winCredit": 1,
+        "topFinish": 1,
+        "margin": 2,
+        "spent": 239,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1505.1198999999906
+      },
+      "expert": {
+        "score": 112,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -16,
+        "spent": 151,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1235.3084999999992
+      },
+      "utility": [
+        0.9022218564965676,
+        0.9022218564965676,
+        0.24240717295412348
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 4,
+      "seed": 10400046,
+      "block": 46,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 117,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -2,
+        "spent": 217,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1664.9680999999982
+      },
+      "alternative": {
+        "score": 117,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -2,
+        "spent": 217,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1694.0068000000028
+      },
+      "expert": {
+        "score": 114,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -25,
+        "spent": 187,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1256.1404000000039
+      },
+      "utility": [
+        0.25777814350343253,
+        0.25777814350343253,
+        0.19291528814832787
+      ]
+    },
+    {
+      "field": "mixed-rivals",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400047,
+      "block": 47,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 132,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -8,
+        "spent": 232,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1877.8864999999932
+      },
+      "alternative": {
+        "score": 132,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -8,
+        "spent": 232,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 2009.1897000000026
+      },
+      "expert": {
+        "score": 133,
+        "rank": 2,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -33,
+        "spent": 191,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1488.5914000000048
+      },
+      "utility": [
+        0.21113444842184514,
+        0.21113444842184514,
+        0.2248927354021092
+      ]
+    },
+    {
+      "field": "mixed-modules",
+      "auctionType": "FirstPrice",
+      "seat": 5,
+      "seed": 10400047,
+      "block": 47,
+      "context": "FirstPrice/6/mixed",
+      "scope": "full",
+      "candidate": {
+        "score": 99,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -24,
+        "spent": 199,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1608.5706999999966
+      },
+      "alternative": {
+        "score": 99,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -24,
+        "spent": 199,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1558.383799999996
+      },
+      "expert": {
+        "score": 98,
+        "rank": 3,
+        "winCredit": 0,
+        "topFinish": 0,
+        "margin": -40,
+        "spent": 151,
+        "decisions": 68,
+        "rejectedBids": 0,
+        "rejectedWords": 0,
+        "ms": 1543.6736000000092
+      },
+      "utility": [
+        0.19394795541644974,
+        0.19394795541644974,
+        0.1782678349941129
+      ]
+    }
+  ]
+}

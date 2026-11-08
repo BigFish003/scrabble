@@ -1,0 +1,22 @@
+{
+  "name": "scrabble-rl",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.18.0" },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "test": "node --test test/*.test.ts",
+    "bench": "node src/cli.ts bench",
+    "train": "node src/cli.ts train",
+    "evaluate": "node src/cli.ts evaluate",
+    "search-demo": "node src/cli.ts search-demo",
+    "mcts-train": "node src/cli.ts mcts-train",
+    "mcts-evaluate": "node src/cli.ts mcts-evaluate",
+    "competition": "node --import tsx competition/main.ts"
+  },
+  "dependencies": {
+    "spacetimedb": "2.12.0",
+    "tsx": "4.22.3"
+  }
+}

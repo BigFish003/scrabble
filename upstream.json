@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/ManushPatel08/Scrabble_Bot_Tournament.git",
+  "commit": "6d61af7daf2f32b4048740de60d75ab2eb5c9d81",
+  "plannerPatch": "patches/submitted-bid.patch",
+  "competitionPatch": "patches/competition-bid.patch",
+  "license": "upstream/LICENSE"
+}

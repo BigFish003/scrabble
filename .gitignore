@@ -1,0 +1,13 @@
+/upstream/
+/runs/*
+!/runs/mcts-pilot/
+/runs/mcts-pilot/*
+!/runs/mcts-pilot/training.jsonl
+!/runs/mcts-pilot/best.json
+!/runs/mcts-pilot/latest.json
+!/runs/mcts-pilot/heldout.json
+!/runs/mcts-pilot/calibration.json
+!/runs/mcts-pilot/confirmation.json
+!/runs/mcts-pilot/transfer.json
+/node_modules/
+*.log

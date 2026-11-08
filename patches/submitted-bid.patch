@@ -1,0 +1,16 @@
+diff --git a/bot-starter/src/strategy/agent.ts b/bot-starter/src/strategy/agent.ts
+--- a/bot-starter/src/strategy/agent.ts
++++ b/bot-starter/src/strategy/agent.ts
+@@ -145,6 +145,12 @@ export class Agent implements Policy {
+     this.lastBalances = null;
+   }
+ 
++  /** Adapter hook: record the actual bid when an outer policy changes it. */
++  noteSubmittedBid(bid: number): void {
++    this.lastBid = bid;
++    this.t.noteMyBid(bid);
++  }
++
+   onAuctionResult(r: AuctionOutcome): void {
+     this.t.result(r);
+     if (this.lastValue >= 0) {

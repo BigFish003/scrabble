@@ -1,0 +1,103 @@
+diff --git a/bot-starter/src/live/adapter.ts b/bot-starter/src/live/adapter.ts
+index 85b05d9..9b28057 100644
+--- a/bot-starter/src/live/adapter.ts
++++ b/bot-starter/src/live/adapter.ts
+@@ -9,7 +9,7 @@
+ 
+ import type { WordIndex } from "../game/dictionary.ts";
+ import { type Counts, countsToString, emptyCounts, letterIndex } from "../game/letters.ts";
+-import type { AuctionType, SimStrategy } from "../game/types.ts";
++import type { AuctionType, SimStrategy, AuctionView, Decision, MatchStart } from "../game/types.ts";
+ import type { Agent } from "../strategy/agent.ts";
+ import type { Params } from "../strategy/params.ts";
+ import { createAgent } from "../strategy.ts";
+@@ -22,6 +22,7 @@ export interface MatchRow {
+   id: bigint;
+   status: Tag<string>;
+   currentRound: number;
++  currentAuctionId?: bigint | null;
+   bagTotal: number;
+   auctionType: Tag<string>;
+   /** Per-match settings in upstream 3064b36 (schema.ts:284-285); the live module dropped them. */
+@@ -124,6 +125,9 @@ export interface LiveOptions {
+    * then calls onMatchReady(). Omitted = always ready.
+    */
+   participantsReady?: (matchId: bigint) => boolean;
++  /** Optional match-local bid adjustment. The live planner still chooses all words. */
++  bidSelector?: (start: MatchStart, matchId: bigint, botIds: readonly bigint[]) =>
++    ((view: AuctionView, plan: Decision, auctionId: bigint, started: number) => number) | undefined;
+   /** Parameter overrides on top of the shipped configuration (BOT_PARAMS). */
+   params?: Partial<Params>;
+   /**
+@@ -140,6 +144,7 @@ interface PendingWord { id: bigint; botId: bigint; word: string; reward: number
+ interface Session {
+   matchId: bigint;
+   agent: Agent;
++  selectBid?: ReturnType<NonNullable<LiveOptions["bidSelector"]>>;
+   seatOf: Map<bigint, number>;
+   botIds: bigint[];
+   /** matchParticipant primary keys, for O(1) balance/score lookups. */
+@@ -453,7 +458,7 @@ export class LiveBot {
+       if (variant === "B") over = { ...over, ...this.o.paramsAlt };
+     }
+     const agent = createAgent(this.o.name, this.o.index, over);
+-    agent.onMatchStart({
++    const matchStart: MatchStart = {
+       seat,
+       nPlayers: parts.length,
+       names,
+@@ -462,10 +467,12 @@ export class LiveBot {
+       rack: dealt,
+       seed: Number(matchId % 2147483647n) ^ 0x51ab,
+       offline,
+-    });
++    };
++    agent.onMatchStart(matchStart);
+     const s: Session = {
+       matchId,
+       agent,
++      selectBid: fresh ? this.o.bidSelector?.(matchStart, matchId, botIds) : undefined,
+       seatOf: new Map(botIds.map((id, i) => [id, i])),
+       botIds,
+       rowIds: parts.map((p) => p.id),
+@@ -535,16 +542,16 @@ export class LiveBot {
+     if (this.myBotId === null) return;
+     const db = this.conn.db;
+     const start = performance.now();
++    if (this.o.participantsReady && !this.o.participantsReady(matchId)) return;
++    const m = db.matchState.id.find(matchId);
++    if (!m || m.status.tag !== "Running" || (m.currentAuctionId !== undefined && m.currentAuctionId !== auctionId)) return;
+     let s = this.sessions.get(matchId);
+     if (!s) {
+       if (!this.myMatches.has(matchId)) return;
+-      if (this.o.participantsReady && !this.o.participantsReady(matchId)) return; // onMatchReady() comes back
+       s = this.startSession(matchId, window) ?? undefined;
+       if (!s) return;
+     } else if (window !== undefined) s.auctionMs = window;
+     if (s.handledAuctions.has(auctionId)) return;
+-    const m = db.matchState.id.find(matchId);
+-    if (!m || m.status.tag !== "Running") return;
+     // Fallback in case the previous result's callback hasn't fired yet.
+     if (s.lastAuction !== null) {
+       const prev = db.auctionResult.auctionId.find(s.lastAuction);
+@@ -560,7 +567,19 @@ export class LiveBot {
+     const scores = rows.map((p) => Number(p?.score ?? 0n));
+     const round = m.currentRound;
+     s.roundOfAuction.set(auctionId, round);
+-    const decision = s.agent.onAuction({ round, letter, bagTotal: m.bagTotal, rack: this.rackFor(matchId), balances, scores });
++    const view = { round, letter, bagTotal: m.bagTotal, rack: this.rackFor(matchId), balances, scores };
++    const decision = s.agent.onAuction(view);
++    if (s.selectBid) {
++      try {
++        const bid = s.selectBid(view, decision, auctionId, start);
++        if (!Number.isSafeInteger(bid) || bid < 0) throw new Error("invalid selected bid");
++        decision.bid = bid;
++        s.agent.noteSubmittedBid(bid);
++      } catch (error) {
++        s.selectBid = undefined;
++        this.o.log(`match ${matchId}: continuing with expert bidding (${error instanceof Error ? error.message : "search error"})`);
++      }
++    }
+     const confirmed = balances[s.seatOf.get(this.myBotId)!] ?? 0;
+     const bid = (amount: number) =>
+       fire(this.o.log, `bid ${amount}`, () => this.conn.reducers.submitBid({ auctionId, amount: BigInt(amount) }));

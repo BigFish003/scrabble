@@ -1,0 +1,23 @@
+{
+  "format": "scrabble-search-gate-v1",
+  "modelHash": "9046793d7c07d5d2922f240f23b4b74eb966fd6a7d499b44ed08c87aa82a3edf",
+  "seed": 8250000,
+  "seedBlocks": 20,
+  "fields": [
+    "base",
+    "module",
+    "mixed",
+    "duel",
+    "practice"
+  ],
+  "choices": {
+    "Vickrey/6/external": "expert",
+    "FirstPrice/6/external": "expert",
+    "Vickrey/6/module": "expert",
+    "FirstPrice/6/module": "expert",
+    "Vickrey/6/mixed": "expert",
+    "FirstPrice/6/mixed": "full",
+    "Vickrey/2/external": "expert",
+    "FirstPrice/2/external": "expert"
+  }
+}
